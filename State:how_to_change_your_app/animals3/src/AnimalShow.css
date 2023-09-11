@@ -1,0 +1,14 @@
+.component {
+  position: relative;
+}
+
+.animalimg {
+  width: 20vw;
+}
+
+.heart {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
