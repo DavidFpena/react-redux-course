@@ -1,0 +1,23 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-animal-button{
+  background-color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10%;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.animal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
