@@ -1,5 +1,4 @@
-import { useState } from "react"
-
+import { useState } from "react";
 
 function SearchBar({ onSubmit }) {
   const [term, setTerm] = useState('');
@@ -10,14 +9,13 @@ function SearchBar({ onSubmit }) {
 
   const submitFormHandle = (event) => {
     event.preventDefault();
-
     onSubmit(term);
   };
 
   return(
     <div>
       <form onSubmit={submitFormHandle}>
-        <input value={term} onChange={changeHandle} type="text" />
+        <input value={term} type="text" onChange={changeHandle}/>
       </form>
     </div>
   )
