@@ -1,0 +1,13 @@
+.search-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+}
+
+.searchform {
+  width: 30rem;
+  height: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
