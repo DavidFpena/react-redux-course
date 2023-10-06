@@ -1,24 +1,26 @@
 import { useState } from "react";
 
-function BookEdit({ book, editBook }) {
-  const [term, setTerm] = useState('')
+
+function CreateBook({ onSubmit }) {
+  const [title, setTitle] = useState('')
 
   const handleChange = (event) => {
-    setTerm(event.target.value)
-  }
+    setTitle(event.target.value);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    editBook(term, book.id);
-  }
+    onSubmit(title);
+  };
 
   return(
     <div>
       <form onSubmit={handleSubmit}>
-        <input value={term} onChange={handleChange}/>
+        <input onChange={handleChange} value={title}/>
       </form>
     </div>
   );
 };
 
-export default BookEdit;
+
+export default CreateBook;
